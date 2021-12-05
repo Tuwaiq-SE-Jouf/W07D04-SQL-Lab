@@ -15,6 +15,7 @@ Answer the following questions:
 <img src="All2.png" width="80%"/>
 
 4.  Write the SQL code to change the course code to 304 for the person whose student number is 07.
+5.  Update course code for students whos student number is 3,4,5.
 <!--
 5. Write the SQL code to delete the row of the person named Jamie Lannister, who started on 5 September 2012, whose course code is 101 and project number is 2. Use logical operators to include all of the information given in this problem.
 
