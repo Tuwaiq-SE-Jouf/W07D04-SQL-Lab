@@ -1,0 +1,46 @@
+
+*Script1*
+
+create table Student( STU_NUM CHAR(6)  primary key , STU_SNAME VARCHAR(15), 
+STU_FNAME VARCHAR(15) , STU_INITIAL CHAR(1), STU_STARTDATE DATE, COURSE_CODE CHAR(3), PROJ_NUM INT(2),
+ foreign key (PROJ_NUM) REFERENCES Project (PROJ_NUM));
+
+*Script2*
+
+INSERT INTO Student VALUES (01, 'Alruwaili', 'Sultanh', 'E', '05-04-14', 206, 6);
+INSERT INTO Student VALUES (02, 'Alshammary', 'futoon', 'C', '12-05-17', 305,11);
+INSERT INTO Student VALUES (03, 'Alruwaili', 'Maha', 'C', '12-05-17', 101,2);
+INSERT INTO Student VALUES (04, 'Alruwaili', 'Sultan', 'J', '05-04-14', 101, 2);
+INSERT INTO Student VALUES (05, 'Alshammary', 'Abdullah', 'I', '12-05-17', 402,14);
+INSERT INTO Student VALUES (06, 'Alkhaldy', 'Athary', 'Y', '12-05-17', 305,10);
+INSERT INTO Student VALUES (07, 'Alnusairi', 'Sara', 'R', '12-05-17', 201,5);
+
+
+*Script3*
+
+select * 
+from Student ;
+WHERE COURSE_CODE = 305; 
+
+
+
+*Script4*
+
+UPDATE Student
+SET COURSE_CODE = 305
+WHERE STU_NUM = 07 ; 
+
+
+*Script5*
+
+UPDATE Student
+SET COURSE_CODE = 104
+WHERE STU_NUM = 03 and STU_NUM = 04 and STU_NUM = 05 
+
+
+*Script6*
+
+
+select *
+from student ;
+
