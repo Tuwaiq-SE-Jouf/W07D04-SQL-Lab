@@ -1,5 +1,5 @@
 # SQL lab 
-
+<!--
 Answer the following questions:
 
 1. Write the SQL code to create a table called Student. The table structure is summarised in the table below (Note that STU_NUM is the primary key):
