@@ -1,3 +1,5 @@
+-- I GOT HELP FROM SULTANH
+
 create table Student(
    STU_NUM CHAR(6),
    STU_NAME VARCHAR(15),
