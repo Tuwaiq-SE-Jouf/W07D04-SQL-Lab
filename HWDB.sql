@@ -10,13 +10,13 @@ PROJ_NUM INTEGER (2),
 primary key (STU_NUM)
 );
 -- 2&3
-insert into student values  (01, 'Snow','Jon','E','05-04-14',206,6);
-insert into student values  (02, 'Stark','Arya','C','12-05-17',350,11);
-insert into student values (03, 'Lannister','Jamie','C','12-05-17',101,2);
-insert into student values (04, 'Lannister','Cercei','J', '05-04-14',101,2);
-insert into student values (05, 'Greyjoy','Theoan','I', '12-05-17',402,14);
-insert into student values (06, 'Tyrell','Margaery', 'Y','12-05-17',350,10);
-insert into student values (07, 'Baratheon','Tommen','R','12-05-17',201,5);
+insert into student values  (1, 'Snow','Jon','E','05-04-14',206,6);
+insert into student values  (2, 'Stark','Arya','C','12-07-17',350,11);
+insert into student values (3, 'Lannister','Jamie','C','05-09-12',101,2);
+insert into student values (4, 'Lannister','Cercei','J', '05-09-12',101,2);
+insert into student values (5, 'Greyjoy','Theoan','I', '05-09-12',402,14);
+insert into student values (6, 'Tyrell','Margaery', 'Y','09-12-15',350,10);
+insert into student values (7, 'Baratheon','Tommen','R','13-01-19',201,5);
 -- 4 
 select * from student;
 WHERE COURSE_CODE = 305;
