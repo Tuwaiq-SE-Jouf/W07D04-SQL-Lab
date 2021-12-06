@@ -18,7 +18,7 @@ insert into student values (5, 'Greyjoy','Theoan','I', '05-09-12',402,14);
 insert into student values (6, 'Tyrell','Margaery', 'Y','09-12-15',350,10);
 insert into student values (7, 'Baratheon','Tommen','R','13-01-19',201,5);
 -- 4 
-select * from student;
+select * from student
 WHERE COURSE_CODE = 305;
 
 -- 5
