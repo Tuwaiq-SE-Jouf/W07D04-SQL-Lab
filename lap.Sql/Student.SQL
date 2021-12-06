@@ -6,24 +6,23 @@ create table Student(
    STU_STARTDATE DATE,
    COURSE_CODE CHAR(3),
    PROJ_NUM INT(2),
-   primary key (STU_NUM),
-   foreign key (PROJ_NUM) REFERENCES Project (PROJ_NUM)
-   );
    
-  //2
-  INSERT INTO Student VALUES (01, 'Snow', 'Jon', 'E', '05-Apr-14', 201, 6);
-INSERT INTO Student VALUES (02, 'Stark', 'Arya', 'C', '12-Jul-17', 305,11);
-INSERT INTO Student VALUES (03, 'Lannister', 'Jamie', 'C', '12-Sep-12', 101,2);
-INSERT INTO Student VALUES (04, 'Lannister', 'Cercei','J', '05-Sep-12', 101, 2);
-INSERT INTO Student VALUES (05, 'Greyjoy', 'Theon', 'I', '9-Dec-15', 402,14);
-INSERT INTO Student VALUES (06, 'Tyrll', 'Margaer', 'Y', '12-Jul-17', 350,10);
-INSERT INTO Student VALUES (07, 'Baratheon', 'Tommen', 'R', '12-Jul-17', 201,5);
+   primary key (STU_NUM));
+   
+ 
+INSERT INTO Student VALUES (1, 'Snow', 'Jon', 'E', '2005-04-14' , 201 , 6);
+INSERT INTO Student VALUES (2, 'Stark', 'Arya', 'C', '2012-05-17' , 305 , 11);
+INSERT INTO Student VALUES (3, 'Lannister', 'Jamie', 'C', '2012-05-12' , 101 , 2);
+INSERT INTO Student VALUES (4, 'Lannister', 'Cercei','J', '2005-06-12' , 101 , 2);
+INSERT INTO Student VALUES (5, 'Greyjoy', 'Theon', 'I', '2009-08-15' , 402 , 14);
+INSERT INTO Student VALUES (6, 'Tyrll', 'Margaer', 'Y', '2012-05-17' , 305 , 10);
+INSERT INTO Student VALUES (7, 'Baratheon', 'Tommen', 'R', '2012-05-17' , 201 , 5);
 
-// 3
-SELECT * FROM Student WHERE COURSE_CODE = 305;
-
+//3
+WHERE COURSE_CODE = 305;
+  
 //4
-UPDATE Student  SET COURSE_CODE =304 WHERE STU_NUM =07;
+ UPDATE Student  SET COURSE_CODE =305 WHERE STU_NUM =7;
 
 //5
- UPDATE Student  SET COURSE_CODE =304  WHERE STU_NUM IN (03,04,05);
+ UPDATE Student  SET COURSE_CODE =304  WHERE STU_NUM IN (3,4,5);
